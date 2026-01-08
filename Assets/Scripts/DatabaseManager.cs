@@ -34,6 +34,7 @@ public class DatabaseManager : MonoBehaviour
         if (!IsAuthenticated())
         {
             Debug.Log("Cannot set display name when user is not logged in!");
+            return;
         }
 
         FirebaseDatabase
@@ -61,6 +62,7 @@ public class DatabaseManager : MonoBehaviour
         if (!IsAuthenticated())
         {
             Debug.Log("Cannot set display name when user is not logged in!");
+            return;
         }
 
         FirebaseDatabase
@@ -87,6 +89,7 @@ public class DatabaseManager : MonoBehaviour
         if (!IsAuthenticated())
         {
             Debug.Log("Cannot set score when user is not logged in!");
+            return;
         }
 
         FirebaseDatabase
